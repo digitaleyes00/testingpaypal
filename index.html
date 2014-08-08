@@ -8,21 +8,13 @@
 <label for="buy">Buy Now:</label>
 <input type="image" id="submitBtn" value="Pay with PayPal" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif">
 <input id="type" type="hidden" name="expType" value="light">
-<input id="paykey" type="hidden" name="paykey" value="AP-19C91109VX621454M">
+<input id="paykey" type="hidden" name="paykey" value="AP-387235433Y542694G">
 </form>
 
 <script type="text/javascript" charset="utf-8">
 var embeddedPPFlow = new PAYPAL.apps.DGFlow({trigger: 'submitBtn'});
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js" ></script>
-<script>
-	$(document).ready(function() {
-		$.ajax("https://www.sandbox.paypal.com/webapps/adaptivepayment/Pay").done(function(response) {
-			console.log(response);
-		});
-	});
-</script>
-
 </body>
 
 </html>
