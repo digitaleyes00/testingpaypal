@@ -14,6 +14,15 @@
 <script type="text/javascript" charset="utf-8">
 var embeddedPPFlow = new PAYPAL.apps.DGFlow({trigger: 'submitBtn'});
 </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js" ></script>
+<script>
+	$(document).ready(function() {
+		$.ajax("https://www.sandbox.paypal.com/AdaptivePayments/Pay").done(function(response) {
+			console.log(response);
+		});
+	});
+</script>
+
 </body>
 
 </html>
